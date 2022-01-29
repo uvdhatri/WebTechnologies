@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:: Cards ::</title>
+
+    <style>
+        .card {
+            border: 2px rgb(66, 167, 218);
+            width: 20rem;
+        }
+        .card img {
+            width: 100%;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        button {
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        @media screen and (max-width:600px) {
+            button {
+                background-color: cornflowerblue;
+                color: pink;
+            }
+        }
+
+        @media screen and (min-width:300px)  and
+        (max-width:600px) {
+            button {
+                background-color: rgb(12, 13, 14);
+                color: rgb(221, 32, 64);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+
+
+        <div class="card">
+            <img src="./icon.img" alt="">
+            <h1>Grishu</h1>
+            <h2>Animator</h2>
+            <h3>grishu@gmail.com</h3>
+            <button>Click</button>
+
+        </div>
+
+    <div class="card">
+        <img src="./icon.img" alt="">
+        <h1>Grishu</h1>
+        <h2>Animator</h2>
+        <h3>grishu@gmail.com</h3>
+        <button>Click</button>
+    </div>
+</body>
+</html>

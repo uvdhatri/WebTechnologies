@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:: Selectors ::</title>
+    <style>
+        * {
+            background-color: paleturquoise;
+          }
+          h1 {
+              color: palevioletred;
+          }
+          h2 {
+              color: mediumslateblue;
+          }
+          h1,h2 {
+              text-align: center;
+          }
+
+          .heading {
+              background-color: oldlace;
+         }
+         #heading2 {
+             background-color: papayawhip;
+         }
+
+          div p{
+              background-color: pink;
+          }
+          div > p{
+              background-color: snow;
+              color: rgb(19, 17, 17);
+          }
+
+          div + p {
+              background-color: rosybrown;
+          }
+           div ~p{
+               font-size: 20px;
+           }
+           .demo:hover {
+               background-color: rgb(67, 108, 185);
+           }
+           .demo::first-letter {
+               font-size: 60px;
+           }
+    </style>
+</head>
+<body>
+    <h1 class="heading"> Selectors in CSS</h1>
+    <h2 id="heading2"> Combinators in CSS</h2>
+    <div>
+        <p>Paragraph1</p>
+        <p>Paragraph2</p>
+        <section>
+            <p>Paragraph3</p>
+        </section>
+        <p>Paragrah4</p>
+        <div>
+            <p>Paragraph5</p>
+        </div>
+        <p>Paragraph6</p>
+        <p>Paragraph7</p>
+    </div>
+    <p>Paragraph8</p>
+    <p class="demo">Paragraph9</p>
+</body>
+</html>
